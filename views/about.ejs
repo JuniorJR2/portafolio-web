@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("partials/head") %>
+
+    <body class="bg-gray-100 font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("partials/header") %>
+
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section
+                    class="text-center mb-12 bg-gradient-to-b from-gray-800 to-blue-50 text-white rounded-3xl p-14">
+                    <img src="img/foto-perfil.png" alt=""
+                        class="w-32 h-32 md:w-32 md:h-40 rounded-full mx-auto mb-4 border-4 border-white shadow-lg object-cover">
+                    <h1 class="text-3xl md:text-4x1 font-bold text-gray-900 mb-2">Ramon de Jesus Gallegos Cordova</h1>
+                    <p class="text-xl text-gray-600 mb-1">Desarrollador Jr Full Stack</p>
+                    <p class="text-gray-500">Tabasco,Mexico</p>
+                </section>
+
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-black pb-2">Acerca de mi
+                        </h2>
+                        <p class="text-gray-700 leading-relaxed">Desarrollador con conocimientos en lenguajes de
+                            programación como Java y C++, y experiencia en el desarrollo web utilizando el framework
+                            Laravel. Competente en tecnologías frontend como HTML5, JavaScript y CSS3, con una
+                            comprensión
+                            sólida de las herramientas y principios fundamentales del desarrollo web</p>
+                    </article>
+                    <div>
+                        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-black pb-2">
+                                Experiencia</h2>
+                            <div class="mb-4">
+                                <h3 class="text-xl font-bold text-gray-800">Desarrollo Punto de Venta</h3>
+                                <p class="text-sm text-gray-500 italic">Taller de Motos | 2025</p>
+                                <p class="text-gray-600 mt-1">Desarrollo de un sistema web de gestion y punto de venta
+                                    para un taller de motocicletas</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-black pb-2">
+                                Educacion</h2>
+                            <div class="mb-4">
+                                <h3 class="text-xl font-bold text-gray-800">Instituto Tecnologico Superior de Comalcalco
+                                </h3>
+                                <p class="text-sm text-gray-500 italic">2018-2023</p>
+                                <p class="text-gray-600">Ingenieria en Sistemas Computacionales - Ingenieria de Sodtware
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Bachillerato Emsad #25</h3>
+                                <p class="text-sm text-gray-500 italic">2015 - 2018</p>
+                                <p class="text-gray-600">Informatica</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+            <%- include("partials/footer") %>
+    </body>
+
+</html>

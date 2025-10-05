@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("partials/head") %>
+
+    <body class="bg-gray-100 font-sans text-gray-800 flex flex-col min-h-screen">
+
+        <%- include ("partials/header") %>
+
+            <main class="container mx-auto p-8 flex-grow">
+                <section id="" class="text-center py-16">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hola, Soy
+                        <span class="text-blue-500">Ramon Gallegos</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">Desarrollador Jr. Full Stack </p>
+                    <a href="/projects"
+                        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg">Ver
+                        Proyectos</a>
+                </section>
+
+                <section class="py-16">
+                    <h2 class="text-3x1 font-bold text-center text-gray-800 mb-8">Habilidades</h2>
+                    <ul class="flex flex-wrap justify-center gap-4">
+                        <li class="bg-gray-200 text gray-800 py-2 px-4 rounded-lg shadow">HTML5</li>
+                        <li class="bg-gray-200 text gray-800 py-2 px-4 rounded-lg shadow">CSS3</li>
+                        <li class="bg-gray-200 text gray-800 py-2 px-4 rounded-lg shadow">javaScripts</li>
+                        <li class="bg-gray-200 text gray-800 py-2 px-4 rounded-lg shadow">Node.js</li>
+                    </ul>
+                </section>
+            </main>
+
+            <%- include("partials/footer") %>
+
+    </body>
+
+</html>

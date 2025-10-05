@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("partials/head") %>
+
+
+    <body class="bg-gray-100 font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("partials/header") %>
+
+            <main class="container mx-auto p-8 flex-grow grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+                <section class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="mb-6">
+                        <h1 class="text-3xl font-bold text-gray-900 mb-2">Contactame</h1>
+                        <p class="text-gray-600">Abierto a discutir nuevos proyectos, ideas creativas u oportunidades.
+                        </p>
+                    </div>
+                    <form action="/enviar-formulario" method="POST" class="space-y-4">
+                        <div>
+                            <input required type="text" name="nombre" placeholder="Su Nombre"
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <input required type="email" name="email" placeholder="Correo Electronico @"
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <input required="text" name="asunto" placeholder="Asunto"
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <textarea required name="mensaje" id="mensaje" placeholder="Mensaje aqui..." rows="5"
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full p-3 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">Enviar</button>
+                    </form>
+                </section>
+
+                <section class="space-y-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Conecta conmigo</h2>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://x.com/2231_junior" target="_blank"
+                                class="bg-gray-200 text-gray-700 hover:bg-gray-900 hover:text-white p-3 rounded-lg shadow transition-all duration-300">
+                                <i class="fab fa-x-twitter fa-xl"></i>
+                            </a>
+                            <a href="https://github.com/JuniorJR2" target="_blank"
+                                class="bg-gray-200 text-gray-700 hover:bg-gray-900 hover:text-white p-3 rounded-lg shadow transition-all duration-300">
+                                <i class="fab fa-github fa-xl"></i></a>
+
+                            <a href="https://www.linkedin.com/in/ramon-gallegos-8b6312276/" target="_blank"
+                                class="bg-gray-200 text-gray-700 hover:bg-gray-900 hover:text-white p-3 rounded-lg shadow transition-all duration-300">
+                                <i class="fab fa-linkedin fa-xl"></i></a>
+
+                            <a href="https://www.facebook.com/ramon.gallegoscordova/" target="_blank"
+                                class="bg-gray-200 text-gray-700 hover:bg-gray-900 hover:text-white p-3 rounded-lg shadow transition-all duration-300">
+                                <i class="fab fa-facebook fa-xl"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2"> O encuentrame
+                            por estos medios</h2>
+                        <div class="space-y-3">
+                            <p class="flex items-center text-gray-600">
+                                <i class="fas fa-envelope mr-3 text-blue-500"></i>
+                                <a href="mailto:ramon22jr31@gmail.com"
+                                    class="hover:text-blue-500 transition-colors">ramon22jr31@gmail.com</a>
+                            </p>
+                            <p class="flex items-center text-gray-600">
+                                <i class="fas fa-phone mr-3 text-blue-500"></i>
+                                <a href="tel:+529332084714" class="hover:text-blue-500 transition-colors">+52
+                                    933-208-47-14</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <%- include("partials/footer") %>
+    </body>
+
+</html>
