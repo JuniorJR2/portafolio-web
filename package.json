@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node dev-server.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon dev-server.js",
     "css": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
