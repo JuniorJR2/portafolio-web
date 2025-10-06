@@ -5,8 +5,21 @@ const ejs = require("ejs");
 const viewsPath = path.join(__dirname, "views");
 const distPath = path.join(__dirname, "dist");
 
-if (!fs.existsSync(distPath)) {
-    fs.mkdirSync(distPath);
+function findEjsFiles(dir) {
+    let results = [];
+    const list = fs.readdirSync(dir);
+    list.forEach(file => {
+        file = path.join(dir, file);
+        const stat = fs.statSync(file);
+        if (stat && stat.isDirectory()) {
+            results = results.concat(findEjsFiles(file));
+        } else {
+            if (path.extname(file) === '.ejs') {
+                results.push(file);
+            }
+        }
+    });
+    return results;
 }
 
 function copyFolderSync(src, dest) {
@@ -26,24 +39,29 @@ function copyFolderSync(src, dest) {
         }
     }
 }
+//clean and create folder dist
+if (fs.existsSync(distPath)) {
+    fs.rmSync(distPath, { recursive: true });
+}
+fs.mkdirSync(distPath);
 
 copyFolderSync(path.join(__dirname, 'public'), path.join(distPath, 'public'));
 
-const files = fs.readdirSync(viewsPath);
+const allEjsFiles = findEjsFiles(viewsPath);
 
-files.forEach(file => {
-    if (path.extname(file) === '.ejs') {
-        const filePath = path.join(viewsPath, file);
-        const fileContent = fs.readFileSync(filePath, 'utf-8');
+allEjsFiles.forEach(filePath => {
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const htmlContent = ejs.render(fileContent, { filename: filePath });
 
-        const htmlContent = ejs.render(fileContent, { filename: filePath });
+    const relativePath = path.relative(viewsPath, filePath);
+    const outputFileName = relativePath.replace('.ejs', '.html');
+    const outputPath = path.join(distPath, outputFileName);
 
-
-
-        const outputFileName = path.basename(file, '.ejs') + '.html';
-        const outputPath = path.join(distPath, outputFileName);
-        fs.writeFileSync(outputPath, htmlContent);
-
-        console.log(`${file} -> ${outputFileName}`);
+    const outputDir = path.dirname(outputPath);
+    if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
     }
-})
+
+    fs.writeFileSync(outputPath, htmlContent);
+    console.log(`✅ ${path.relative(viewsPath, filePath)} -> ${outputFileName}`);
+});
