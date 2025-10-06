@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
+    "dev": "nodemon dev-server.js",
     "css": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch",
     "build": "node build.js"
   },
