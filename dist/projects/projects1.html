@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Asegúrate de enlazar tu CSS compilado -->
+    <link rel="stylesheet" href="/css/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7tyknfzOi2jF8uaChlR0Gt3rT8bZ0UlsGzRqnYdLd9w9tK2U8z7mC7sC+HfPj8jv2iZm6V9i2z7d2z8Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <header class="bg-gray-800 text-white shadow-md sticky top-0 z-10">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-2x1 font-bold text-white">R.G.</a>
+        <div class="flex space-x-4">
+            <a href="/about" class="text-white hover:text-blue-500 transition-colors duration-300">Acerca de</a>
+            <a href="/projects" class="text-white hover:text-blue-500 transition-colors duration-300">Proyectos</a>
+            <a href="/contact" class="text-white hover:text-blue-500 transition-colors duration-300">Contacto</a>
+        </div>
+    </nav>
+</header>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Punto de Venta || Taller de
+                        motocicletas
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Sistema integral para la gestion de taller
+                        de motocicleta, controlando inventario, servicios, ganancias y reportes de manera eficiente.</p>
+
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="https://picsum.photos/seed/taller1/800/600.jpg" alt="img1"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="https://picsum.photos/seed/taller2/800/600.jpg" alt="img2"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="https://picsum.photos/seed/taller3/800/600.jpg" alt="img3"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Descripcion del Proyecto</h2>
+                            <p class="text-gray-700 leading-relaxed">Esta aplicación fue desarrollada para solucionar la
+                                necesidad de un taller local de gestionar sus operaciones diarias. Permite un control
+                                completo sobre el inventario de repuestos, la agenda de servicios, el registro de
+                                clientes
+                                y la generación de facturas y reportes de ventas.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Caracteristicas Principales
+                            </h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Gestion de inventario e tiempo real</li>
+                                <li>Registro y Historial de ventas</li>
+                                <li>Genearacion de tickets</li>
+                                <li>Reporte de Ganancias (semanales,mensuales, diarias)</li>
+                                <li>Reporte de ganancias en pdf</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades Aplicadas
+                            </h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Logica de negocios
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño de BD
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Resolucion de
+                                    Problemas
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Herramientas y Tecnologias</h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">HTML</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">CSS</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">JavaScript</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">MySql</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Node.js</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Express</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">EJS</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Visual Studio Code
+                                </li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">XAMPP</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Enlaces del proyecto</h2>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a target="_blank" href=""
+                                    class="flex-1 text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>Ver en GitHub</a>
+                                <a target="_blank" href=""
+                                    class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Ver sistema</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer id="" class="bg-gray-800 text-white p-6 mt-auto">
+    <div class="container mx-auto text-center">
+        <p class="mb-4">Conecta conmigo:</p>
+        <div class="flex justify-center space-x-6">
+            <a href="https://github.com/JuniorJR2" target="_blank"
+                class="hover:text-green-400 transtion-colors duration-300">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://wa.me/9332084714" target="_blank"
+                class="hover:text-green-400 transtion-colors duration-300">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+        <p class="mt-6 text-sm text-gray-400">&copy; 2025 Ramon Gallegos. Todos los derechos reservados</p>
+    </div>
+
+</footer>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>
