@@ -1,12 +1,11 @@
 document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita el envío tradicional del formulario
+    event.preventDefault();
 
     const form = event.target;
     const formData = new FormData(form);
     const submitButton = form.querySelector('button[type="submit"]');
     const originalButtonText = submitButton.innerHTML;
 
-    // Muestra un estado de "cargando" en el botón
     submitButton.innerHTML = 'Enviando...';
     submitButton.disabled = true;
 
@@ -19,21 +18,29 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     })
         .then(response => {
             if (response.ok) {
-                // Éxito: Muestra un mensaje y limpia el formulario
-                alert('¡Mensaje enviado con éxito! Te responderé pronto.');
+                // Éxito: Muestra SweetAlert de éxito
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Mensaje Enviado!',
+                    text: 'Te responderé lo antes posible.',
+                    timer: 3000, // Se cierra automáticamente después de 3 segundos
+                    showConfirmButton: false
+                });
                 form.reset();
             } else {
-                // Error del servidor
                 throw new Error('Hubo un problema al enviar el formulario.');
             }
         })
         .catch(error => {
-            // Error de red o JS
             console.error('Error:', error);
-            alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+            // Error: Muestra SweetAlert de error
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.',
+            });
         })
         .finally(() => {
-            // Restaura el botón a su estado original, haya éxito o error
             submitButton.innerHTML = originalButtonText;
             submitButton.disabled = false;
         });
