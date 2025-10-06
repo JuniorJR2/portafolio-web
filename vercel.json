@@ -4,5 +4,5 @@
   "outputDirectory": "dist",
   "installCommand": "pnpm install",
   "builds": [{ "src": "dist/**/*", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/dist/$1" }]
+  "routes": [{ "src": "/(.*)", "dest": "/$1" }]
 }
