@@ -2,12 +2,13 @@
   "name": "portafolio-web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "css": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
+    "css": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch",
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "nodemailer": "^7.0.6"
   },
   "devDependencies": {
+    "ejs": "^3.1.10",
     "autoprefixer": "^10.4.21",
     "nodemon": "^3.1.10",
     "postcss": "^8.5.6",
