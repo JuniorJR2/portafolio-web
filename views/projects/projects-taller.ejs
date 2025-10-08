@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("../partials/header") %>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Sistema Web de Control para Taller
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Sistema integral para la gestion de taller
+                        de motocicleta, controlando inventario, servicios, ganancias y reportes de manera eficiente.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto mb-8">
+                        <div class="bg-red-50 border-l-4 border-red-500 mb-2 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-red-800 mb-2">EL PROBLEMA</h3>
+                            <p class="text-gray-700">EL taller gestionaba sus ventas e inventario a traves de Whatsapp y
+                                una libreta, lo que
+                                resultaba en perdidas de informacion, desorganizacion y un seguimiento ineficiente del
+                                inventario y las ganancias</p>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 mb-2 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-green-800 mb-2">LA SOLUCION</h3>
+                            <p class="text-gray-700">Desarrole un sistema web centralizado que permite, llevar un
+                                registro digital de ventas,
+                                inventario en tiempo real y generar reporte de ganancias (diarias,semanales,mensuales)
+                                de forma automatica.</p>
+                        </div>
+                    </div>
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-80 md:h-[32rem] overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="/img/taller/pagina-principal.png" alt="Pagina principa del Taller"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/taller/login.png" alt="Login del sistema"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/taller/registro-usuarios.png" alt="Radio difusora comunitaria del INPI"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/taller/contro-inventario.png" alt="Control de inventario taller"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/taller/venta.png" alt="Control de inventario taller"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/taller/genera-ganancias.png" alt="Control de inventario taller"
+                                    class="w-full h-full object-cover flex-shrink-0">
+
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mb-12">
+
+                </section>
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Características Principales</h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Administracion de roles (admin,vendedor)</li>
+                                <li>Permisos de acuerdo al rol del usuario</li>
+                                <li>Gestión de inventario en tiempo real</li>
+                                <li>Registro y historial completo de ventas</li>
+                                <li>Ventas tipo borrador permitiendo continuar un venta mas tarde</li>
+                                <li>Generación de tickets y ganancias en PDF</li>
+                                <li>Reportes de ganancias (diarios, semanales, mensuales)</li>
+
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades y Competencias Aplicadas</h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Desarrollo
+                                    Full-Stack</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño de Base de
+                                    Datos Relacional</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Autenticación y
+                                    Sesiones de Usuario</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Generación de
+                                    Reportes en PDF</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Lógica de Negocio
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Tecnologías Utilizadas</h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Node.js</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Express.js</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">EJS</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">MySQL</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">JavaScript</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">HTML5 / CSS3</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Resultados e Impacto</h2>
+                            <p class="text-gray-700 mb-4">La implementación del sistema permitió optimizar las
+                                operaciones del taller, logrando:</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Reducción del <strong>80% del tiempo</strong> en la gestión de inventario.</li>
+                                <li>Eliminación total de pérdidas de registro de clientes y servicios.</li>
+                                <li>Generación de reportes financieros en <strong>menos de 1 minuto</strong>, una tarea
+                                    que antes tomaba horas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="text-center bg-gray-100 p-8 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Confidencialidad y Disponibilidad</h2>
+                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Este proyecto fue desarrollado para un cliente real
+                        y esta actualmente en produccion. Por respeto
+                        a la confidencialidad de sus datos de negocio, el codigo fuente no es publico. Sin embargo, el
+                        sistema demuestra mi capacidad para desarrollar soluciones completas y desplegarlas en un
+                        entorno
+                        real</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="/contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                            <i class="fas fa-envelope mr-2"></i> Contactar para Proyectos Similares
+                        </a>
+                        <!-- boton para cuando tenga el pdf detallado-->
+                        <!-- <a href="" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                            <i class="fas fa-download mr-2"></i> Descargar Caso de Éxito
+                        </a> -->
+                    </div>
+                </section>
+            </main>
+
+            <%- include("../partials/footer") %>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>

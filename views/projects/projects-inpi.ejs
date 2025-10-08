@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("../partials/header") %>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Portal de Información del INPI de
+                        Nacajuca
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Plataforma clave para la divulgación
+                        cultural y de servicios del INPI, conectando a la comunidad chontal con información vital y
+                        preservando su identidad</p>
+
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="/img/inpi/pagina-principal.png" alt="Pagina principa del portal INPI"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/acerca-de.png" alt="'Acerca de' con informacion sobre el INPI"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/contacto.png" alt="Formulario de contacto del portal INPI"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/radio-difusora.png" alt="Radio difusora comunitaria del INPI"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/admi-slider.png" alt="Panel de administracion para promotores INPI"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/view-slider.png" alt="Vista publica de un slider publicado"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/adm-publi.png" alt="Panel de administracion de publicaciones INPI"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/div-info.png" alt="Formulario para publicar informacion"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/inpi/view-publi.png" alt="vista de una noticia publicada"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <!-- NUEVA SECCIÓN BONUS: Flujo del Sistema -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Flujo del Sistema</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/admi-slider.png" alt="Panel de administrador"
+                                class="w-full h-40 object-cover rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">1. Administrador</h3>
+                            <p class="text-gray-600 text-sm">Gestiona usuarios y configura el sistema.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/div-info.png" alt="Creando una publicación"
+                                class="w-full h-40 object-cover rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">2. Promotor</h3>
+                            <p class="text-gray-600 text-sm">Crea y publica contenido dinámicamente.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/view-publi.png" alt="Contenido publicado"
+                                class="w-full h-40 object-cover rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">3. Usuario Final</h3>
+                            <p class="text-gray-600 text-sm">La comunidad accede a la información actualizada.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Descripcion del Proyecto</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">Ante la necesidad de fortalecer la identidad y
+                                el
+                                acceso a la información de los pueblos indígenas, se desarrolló este portal. Su objetivo
+                                es ser un canal oficial y dinámico para que el INPI de Nacajuca pueda compartir sus
+                                actividades, servicios y noticias con la comunidad chontal y el público en general.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                El sistema no solo centraliza la información, sino que también empodera a los promotores
+                                culturales, permitiéndoles gestionar y actualizar el contenido de forma autónoma y
+                                segura.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Caracteristicas Principales
+                            </h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Divulgar Informacion en tiempo y forma de cada modulo del INPI</li>
+                                <li>Inicio de sesion seguro para cada promotor cultural</li>
+                                <li>Dashboard con permisos de acuerdo a las funciones de cada promotor</li>
+                                <li>Administración completa de la informacion (editar, eliminar, publicar)</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades Aplicadas
+                            </h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Analisis de
+                                    requisistos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño de BD
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Resolucion de
+                                    Problemas
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Front-End
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Back-End
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Herramientas y Tecnologias</h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">PHP</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Laravel</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">MySql</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Blade Templates
+                                </li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">CSS</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Bootstrap</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">JavaScript</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Laravel Collective
+                                    HTML</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Laravel UI</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Visual Studio Code
+                                </li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">XAMPP</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">phpMyAdmin</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Enlaces del proyecto</h2>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a target="_blank" href="https://github.com/JuniorJR2/inpi-web-final"
+                                    class="flex-1 text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>Ver en GitHub</a>
+                                <a target="_blank"
+                                    href="https://drive.google.com/file/d/1O_WA9zTqaDUtJYNmLZ8mreQArgfB_y2W/view?usp=sharing"
+                                    class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Ver Documentacion</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <%- include("../partials/footer") %>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>
