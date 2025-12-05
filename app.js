@@ -18,6 +18,7 @@ app.get("/projects/projects-taller", (req, res) => res.render("projects/projects
 app.get("/projects/projects-inpi", (req, res) => res.render("projects/projects-inpi"));
 app.get("/projects/projects-portafolio", (req, res) => res.render("projects/projects-portafolio"));
 app.get("/projects/projects-sensai", (req, res) => res.render("projects/projects-sensai"));
+app.get("/projects/projects-ciber", (req, res) => res.render("projects/projects-ciber"));
 // Servidor
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Servidor en http://localhost:${port}`));
